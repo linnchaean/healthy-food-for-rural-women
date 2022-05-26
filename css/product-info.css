@@ -1,0 +1,191 @@
+@import url(../css/common.css);
+
+/*info-img*/
+main > .info{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    
+}
+main > .info > .img{
+    position: relative;
+}
+main > .info > .img > .info-img{}
+main > .info > .img > .info-img > p{
+    width: 100%; 
+}
+main > .info > .img > .info-img > p > img{
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.11);
+    border-radius: 30px;
+    width: 100%;
+}
+
+/*info-btn*/
+main > .info > .img > .info-btn{}
+main > .info > .img > .info-btn > p:nth-child(1){
+    position: absolute;
+    bottom: 50%; left: 0%;
+    transform: translateY(70%);
+}
+main > .info > .img > .info-btn > p:nth-child(2){
+    position: absolute;
+    bottom: 50%; right: 0%;
+    transform: translateY(70%);
+}
+main > .info > .img > .info-btn > p > img{
+    width: 50px;
+}
+
+
+
+/*info-txt*/
+main > .info > .d-txt{
+    width: 20%;
+    margin-left: 100px;
+}
+main > .info > .d-txt > h3:nth-child(1){
+    font-size: 1.5rem;
+}
+main > .info > .d-txt > p{}
+main > .info > .d-txt > .number{
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
+    padding: 5px 0;
+    margin: 5px 0;
+}
+main > .info > .d-txt > .number > label{
+    margin-right: auto;
+    text-align: left;
+}
+main > .info > .d-txt > .number > p{
+    border: 1px solid #f4f4f4;
+    height: 30px; width: 30px;
+    padding: 6px;
+}
+main > .info > .d-txt > b{
+    color: #790606;
+    margin-top: 20px;
+    display: block;
+}
+main > .info > .d-txt > .number > input{
+    border: 1px solid #f4f4f4;
+    text-align: center;
+    height: 30px;
+}
+
+
+main > .info > .d-txt > .price{
+    display: flex;
+    justify-content: space-between;
+}
+main > .info > .d-txt > .price > .sum > .num{
+    color: #790606;
+}
+main > .info > .d-txt > .add{}
+main > .info > .d-txt > .add > span{
+    display: block;
+    border: 1px solid #f4f4f4;
+    height: 60px;
+    text-align: center;
+    border-radius: 40px;
+    color: #4f4f4f;
+    background-color: #fff;
+    line-height: 60px;
+    margin-top: 90px;
+}
+main > .info > .d-txt > .add > span:nth-child(2){
+    background-color: #285500;
+    color: #fff;
+    margin-top: 15px;
+}
+main > .info > .d-txt > .add > span > b{
+    font-size: 1.3rem;
+}
+
+
+/*related product*/
+.line{
+    margin-bottom: 20px;
+    border-top: 1px solid #28550059;
+    padding-top: 50px;
+}
+.line::before{
+    content: '';
+    width: 80px; height: 8px;
+    border-bottom: 8px solid #285500;
+    display: block;
+}
+.product > .line > b{}
+
+/*ul*/
+.product{
+    background: none;
+    padding: 20px 300px;
+    margin: 100px 0 0 0;
+}
+.product > ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    /* border-bottom: 1px solid #28550059; */
+}
+.product > ul > li{
+    width: 25%;
+    margin-bottom: 100px;
+}
+.product > ul > li > a{
+    background-color: #fff;
+    width: 300px; height: 300px;
+    border-radius: 20px;
+    display: flex;
+    padding: 50px;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.089);
+}
+.product > ul > li > a::after{
+    content: url(../img/icon/ph_heart-straight-light.png);
+    position: absolute;
+    bottom: 5%; right: 5%;
+}
+.product > ul > li > a > img{
+    transition: 0.5s;
+    width: 100%;
+}
+.product > ul > li > div{
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+.product > ul > li > div > a > p{
+    font-size: 0.8rem;
+}
+.product > ul > li > div > a{color: #000;}
+.product > ul > li > div > a:nth-child(3) > h4{color: #285500;}
+.product > ul > li > a:hover > img{
+    transform: scale(1.1);
+}
+
+.product > .txt-1{}
+.product > .txt-1 > div{
+    display: flex;
+}
+.product > .txt-1 > div > b{
+    width: 150px;
+}
+.detail-1 > .line > div > p{}
+
+.product > .txt-2{
+    text-align: center;
+}
+.product > .txt-3{
+    text-align: center;
+    margin-bottom: 200px;
+}

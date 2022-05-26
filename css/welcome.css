@@ -1,0 +1,53 @@
+@import url(../css/common.css);
+
+
+
+main > .line{
+    width: 100%;
+}
+main > .line > span{
+    display: block;
+    width: 80%;
+    border-top: 1px solid #28550050;
+    margin: 50px auto;
+}
+
+
+
+
+
+main > .txt{
+    text-align: center;
+    width: 100%;
+}
+main > .txt > p{}
+main > .txt > p > b{
+    color: #285500;
+}
+
+
+
+
+
+main > .add{
+    width: 100%;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+main > .add > span{
+    display: inline-block;
+    width: 10vw;
+    border: 1px solid #285500;
+    height: 50px;
+    text-align: center;
+    border-radius: 40px;
+    color: #285500;
+    background-color: #fff;
+    line-height: 50px;
+    margin: 0 5px;
+}
+main > .add > span:nth-child(2){
+    background-color: #285500;
+    color: #fff;
+}

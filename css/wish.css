@@ -1,0 +1,80 @@
+@import url(../css/common.css);
+
+.product{
+    background-color: #F5F5F5;
+    padding: 100px 300px;
+    margin: 100px 0 0 0;
+}
+.product > ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.product > ul > li{
+    width: 30%;
+    margin-bottom: 100px;
+}
+.product > ul > li > a{
+    background-color: #fff;
+    width: 300px; height: 300px;
+    border-radius: 20px;
+    display: flex;
+    padding: 50px;
+    position: relative;
+    margin: 0 auto;
+}
+.product > ul > li > a::after{
+    content: url(../img/icon/ph_heart-straight-fill.png);
+    position: absolute;
+    bottom: 5%; right: 5%;
+}
+.product > ul > li > a::before{
+    content: url(../img/icon/check1.png);
+    position: absolute;
+    top: 5%; left: 5%;
+}
+.product > ul > li > a > img{
+    transition: 0.5s;
+    width: 100%;
+}
+.product > ul > li > div{
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+.product > ul > li > div > a > p{
+    font-size: 0.8rem;
+}
+.product > ul > li > div > a{color: #000;}
+.product > ul > li > div > a:nth-child(3) > h4{color: #285500;}
+.product > ul > li > a:hover > img{
+    transform: scale(1.1);
+}
+
+
+main > .add{
+    width: 100%;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+main > .add > span{
+    display: inline-block;
+    width: 12vw;
+    border: 1px solid #285500;
+    height: 50px;
+    text-align: center;
+    border-radius: 40px;
+    color: #285500;
+    background-color: #fff;
+    line-height: 50px;
+    margin: 0 5px;
+}
+main > .add > span:nth-child(2){
+    background-color: #285500;
+    color: #fff;
+}
+main > .add > span > b{}
