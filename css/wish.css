@@ -32,7 +32,7 @@
     bottom: 5%; right: 5%;
 }
 .product > ul > li > a::before{
-    content: url(../img/icon/check1.png);
+    content: url(../img/icon/check30-1.png);
     position: absolute;
     top: 5%; left: 5%;
 }

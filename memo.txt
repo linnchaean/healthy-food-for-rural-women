@@ -1,0 +1,22 @@
+side1 간장게장
+side2 달래양념장
+side3 빨간 진미채
+side4 주먹밥재료
+side5 아귀포무침
+side6 양념게장
+
+salted1 긴오징어젓갈
+salted2 미더덕젓갈
+salted3 멍게젓갈
+salted4 어리굴젓
+salted5 국산낙지젓갈
+salted6 국산갈치속젓
+
+kimchi1 깍두기
+kimchi2 동치미
+kimchi3 묵은갓김치
+kimchi4 배추물김치
+kimchi5 얼갈이물김치
+kimchi6 우리아이처음김치 
+
+

@@ -1,20 +1,10 @@
 @import url(../css/common.css);
 
-/* main > .line{
-    width: 100%;
-}
-main > .line > span{
-    display: block;
-    width: 80%;
-    border-top: 1px solid #28550050;
-    margin: 50px auto;
-} */
-
 main > .signup{
     width: 100%;
 }
 main > .signup > ul{
-    width: 60%;
+    width: 40%;
     margin: 0 auto
 }
 main > .signup > ul > li{
@@ -58,28 +48,183 @@ main > .signup > ul > .birth > input{
 main > .signup > ul > .birth > input::placeholder{
     text-align: center;
 }
+main > .signup > ul > li:nth-child(6) > button{
+    color: #c4c4c4;
+    border-color: #c4c4c4;
+} 
 main > .signup > hr{
-    width: 60%;
+    width: 40%;
     border: 1px solid #28550013;
 }
 
 
 main > .signup > .check{
     display: flex;
+    width: 40%;
+    margin: 0 auto;
 }
-main > .signup > .check > p{}
-main > .signup > .check > .box{}
-
-
-
-main > .signup > .check > .box > .check-1{}
-main > .signup > .check > .box > .check-1 > input{}
-main > .signup > .check > .box > .check-1 > label{}
+main > .signup > .check > p{
+    width: 150px;
+}
 
 
 
 main > .signup > .check > .box > .check-2{
-    display: flex;
+    display: block;
 }
-main > .signup > .check > .box > .check-2 > input{}
-main > .signup > .check > .box > .check-2 > label{}
+main > .signup > .check > .box > .check-2 > input{
+}
+main > .signup > .check > .box label:nth-of-type(1){
+    background: url(../img/icon/check1.png);
+    background-size: 100%;
+    font-size: 0;
+    width: 18px; height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+main > .signup > .check > .box > .check-2 > label:nth-of-type(2){
+    display: inline-block;
+    width: 300px;
+    margin-top: 5px;
+}
+main > .signup > .check > .box > .check-2 > label > em{
+    color: #4c4c4c;
+}
+main > .signup > .check > .box > .check-2 > a{
+    color: #285500;
+    height: 18px;
+}
+main > .signup > .check > .box > .check-2 > a::after{
+    content:'';
+    background: url(../img/icon/look.png) 0  -3px no-repeat;
+    /* background-size: 100%; */
+    width: 16px; height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+
+
+
+
+
+main > .signup > .check > .box > .check-2 > .route{
+    display: flex;
+    justify-content: left;
+    margin-left: 30px;
+}
+main > .signup > .check > .box > .check-2 > .route > .check-3{
+    margin: 5px 10px;
+}
+
+
+/*==============checkbox===============*/
+main > .signup > .check > .box > .check-1 > input{
+    display: none;
+}
+main > .signup > .check > .box > .check-2 > input{
+    display: none;
+}
+main > .signup > .check > .box > .check-2 > .route > .check-3 > input{
+    display: none;
+}
+
+
+
+
+
+/*=============button===============*/
+main > .signup > .add{
+    width: 100%;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+main > .signup > .add > span{
+    display: inline-block;
+    width: 10vw;
+    border: 1px solid #285500;
+    height: 50px;
+    text-align: center;
+    border-radius: 40px;
+    color: #fff;
+    background-color: #fff;
+    line-height: 50px;
+    margin: 0 5px;
+    background-color: #285500;
+}
+
+
+
+/*===========popup1===========*/
+.popup-1{
+    width: 450px; height: 600px;
+    background-color: #fff;
+    border-radius: 20px;
+    color: #9e9e9e;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.185);
+    position: fixed;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.popup-1 > h5{
+    font-size: 1.1rem;
+    color: #000;
+    margin: 0;
+    padding: 20px 0 20px 20px;
+}
+.popup-1 > .popup-txt{
+    width: 450px; height: 470px;
+    overflow: auto;
+    padding: 0 20px;
+}
+.popup-1 > h6{
+    text-align: center;
+    color: #285500;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 20px 0;
+}
+
+
+/*===========popup2===========*/
+.popup-2{
+    width: 450px; height: 600px;
+    background-color: #fff;
+    border-radius: 20px;
+    color: #9e9e9e;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.185);
+    position: fixed;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.popup-2 > h5{
+    font-size: 1.1rem;
+    color: #000;
+    margin: 0;
+    padding: 20px 0 20px 20px;
+}
+.popup-2 > .popup-txt{
+    width: 450px; height: 470px;
+    overflow: auto;
+    padding: 0 20px;
+}
+.popup-2 > h6{
+    text-align: center;
+    color: #285500;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 20px 0;
+}
+
+
+/*==========popup background==========*/
+.shadow{
+    position: fixed;
+    left: 0;top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%; height: 100vh;
+    display: none;
+}

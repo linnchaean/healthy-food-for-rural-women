@@ -1,1 +1,78 @@
 @import url(../css/common.css);
+
+.login{
+    width: 40%;
+    margin: 0 auto;
+    /* border: 1px solid #285500;
+    border-radius: 5px; */
+    padding: 20px;
+}
+.login > ul{
+    width: 350px;
+    margin: 0 auto;
+}
+.login > ul > li{}
+.login > ul > li > input{
+    width: 350px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+    padding-left: 10px;
+    margin: 5px auto;
+}
+.login > ul > li > input::placeholder{
+    color: #c4c4c4;
+}
+
+.wrap{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin: 0 auto;
+    height: 18px;
+}
+.wrap > .keep{
+    height: 100%;
+}
+.wrap > .keep > input{
+    display: none;
+}
+.wrap > .keep > label{
+    height: 18px;
+    vertical-align: middle;
+}
+.wrap > .keep > label:nth-of-type(1){
+    background: url(../img/icon/check1.png);
+    background-size: 100%;
+    width: 18px; height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.wrap > ul{}
+.wrap > ul > li{
+    display: inline-block;
+}
+.wrap > ul > li > a{
+    color: #000;
+    padding-left: 8px;
+}
+
+.btn{
+    margin-top: 50px;
+}
+.btn > button{
+    display: block;
+    margin: 10px auto;
+    width: 350px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #285500;
+    background-color: #285500;
+    color: #fff;
+}
+.btn > button:nth-of-type(2){
+    background-color: #fff;
+    color: #285500;
+}
