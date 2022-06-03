@@ -22,7 +22,7 @@ body{}
 /*header*/
 header{
     /* position: fixed; */
-    width: 100%; height: 200px;
+    width: 100%; height: 150px;
     padding: 0 10%;
     display: flex;
     justify-content: space-between;
@@ -38,41 +38,11 @@ header > .burger > a > span{
 }
 header > .burger > a > span::after{
     content: '';
-    width: 25px;
-    border-bottom: 3px solid #285500;
+    width: 20px;
+    border-bottom: 2px solid #285500;
     margin-bottom: 5px;
     display: block;
 }
-
-
-/*cgr*/
-/* .burger:hover .cgr{
-    display: none;
-}
-
-.cgr{
-    position: absolute;
-    left: 12%; top: 13%;
-    transition: 0.5s;
-    width: 300px; height: 40px;
-    line-height: 40px;
-    text-align: center;
-    display: none;
-}
-.cgr > nav > a{
-    color: #285500;
-    margin: 15px;
-    padding: 5px;
-}
-.cgr > nav > a:hover{
-    border-bottom: 1px solid #285500;
-} */
-
-
-
-
-
-
 
 
 
@@ -80,11 +50,11 @@ header > .burger > a > span::after{
 /*logo*/
 header > .logo > a{
     display: block;
-    width: 125px; height: 125px;
+    width: 105px; height: 105px;
 }
 header > .logo > a > h1{
     display: block;
-    background: url(../img/logo/logo-sub.png) no-repeat;
+    background: url(../img/logo/logo_100px.png) no-repeat;
     width: 100%; height: 100%;
 }
 /*icon*/
@@ -92,9 +62,9 @@ header > nav{width: 20%;text-align: right;}
 header > nav > a{
     font-size: 0;
     display: inline-block;
-    width: 35px; height: 35px;
+    width: 25px; height: 25px;
 }
-header > nav > a:nth-child(1)::after{
+header > nav > a:nth-child(1){
     content: url(../img/icon/fluent_search-16-filled.png);
 }
 header > nav > a:nth-child(2){
