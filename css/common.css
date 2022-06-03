@@ -46,7 +46,7 @@ header > .burger > a > span::after{
 
 
 /*cgr*/
-.burger:hover .cgr{
+/* .burger:hover .cgr{
     display: none;
 }
 
@@ -66,7 +66,7 @@ header > .burger > a > span::after{
 }
 .cgr > nav > a:hover{
     border-bottom: 1px solid #285500;
-}
+} */
 
 
 
