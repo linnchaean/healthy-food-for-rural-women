@@ -83,6 +83,16 @@
     vertical-align: middle;
 }
 
+.order > tbody > tr:last-of-type{
+    display: none;
+}
+.order > tbody > tr:last-of-type > td{
+    border: none;
+}
+.order > tbody > tr:last-of-type > td > b{
+    color: #285500;
+}
+
 
 
 /*
