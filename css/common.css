@@ -46,9 +46,9 @@ header > .burger > a > span::after{
 
 
 /*cgr*/
-/* .burger:hover .cgr{
-    display: inline-block;
-} */
+.burger:hover .cgr{
+    display: none;
+}
 
 .cgr{
     position: absolute;
