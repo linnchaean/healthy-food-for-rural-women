@@ -86,3 +86,93 @@
 .cart > tbody > tr > td:nth-of-type(7){
     color: #4c4c4c;
 }
+
+.total-box{
+    background-color: #f4f4f4;
+    width: 80%; height: 10vh;
+    margin: 0 auto;
+    display: flex;
+    line-height: 10vh;
+    align-items: center;
+    justify-content: right;
+    padding-right: 80px;
+    
+}
+.total-box > .total-amount{
+    display: flex;
+    padding: 0 20px;
+}
+.total-box > .total-amount > p:nth-of-type(1){
+    color: #4c4c4c;
+    padding-right: 5px;
+}
+.total-box > .total-delivery{
+    display: flex;
+    padding: 0 20px;
+}
+.total-box > .total-delivery > p:nth-of-type(1){
+    color: #4c4c4c;
+    padding-right: 5px;
+}
+.total-box > .total{
+    display: flex;
+}
+.total-box > .total > p:nth-of-type(2){
+    color: #285500;
+}
+.total-box > .total > p:nth-of-type(1){
+    color: #4c4c4c;
+    padding-right: 5px;
+}
+
+
+main > .add{
+    width: 100%;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: left;
+    margin-left: 10%;
+}
+main > .add > span{
+    display: inline-block;
+    width: 8vw;
+    border: 1px solid #285500;
+    height: 35px;
+    text-align: center;
+    border-radius: 40px;
+    color: #285500;
+    background-color: #fff;
+    line-height: 30px;
+    margin: 0 5px;
+}
+main > .add > span > b{
+    font-size: 0.8rem;
+}
+main > .add > span:nth-child(3){
+    background-color: #285500;
+    color: #fff;
+}
+
+
+main > .add-2{
+    width: 100%;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+main > .add-2 > span{
+    display: inline-block;
+    width: 11vw;
+    border: 1px solid #285500;
+    height: 50px;
+    text-align: center;
+    border-radius: 40px;
+    color: #285500;
+    background-color: #fff;
+    line-height: 50px;
+    margin: 0 5px;
+}
+main > .add-2 > span:nth-child(2){
+    background-color: #285500;
+    color: #fff;
+}

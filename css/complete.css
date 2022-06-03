@@ -1,1 +1,192 @@
 @import url(../css/common.css);
+
+/*
+============order==============
+*/
+.order{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.order > thead{
+    vertical-align: middle;
+    text-align: left;
+    width: 100%;
+}
+.order > thead > tr{
+    vertical-align: middle;
+}
+.order > tbody{
+    width: 100%;
+}
+.order tr > th{
+    border-bottom: 1px solid #285500;
+    padding: 5px 0;
+}
+.order > thead > tr > th:nth-of-type(3){
+    text-align: right;
+}
+
+
+
+.order thead > tr > th:nth-of-type(1){
+    width: 80%;
+}
+.order thead > tr > th:nth-of-type(2){
+    width: 10%;
+}
+.order thead > tr > th:nth-of-type(3){
+    width: 10%;
+}
+
+
+
+.order > tbody > tr > td:nth-child(1) > .item{
+    display: flex;
+    align-items: center;
+}
+.order > tbody > tr > td > a{
+    width: 50%;
+}
+.order > tbody > tr > td > .item > a > img{
+    width: 60%;
+    vertical-align: middle;
+}
+.order > tbody > tr > td > .item > .txt{
+    width: 50%;
+    text-align: left;
+}
+.order > tbody > tr > td > .item > .txt > a{
+    color: #000;
+}
+.order > tbody > tr > td > .item > .txt > a > p{
+    font-size: 0.8rem;
+    color: #4c4c4c;
+}
+.order > tbody > tr button{
+    border-radius: 20px;
+    border: 1px solid #285500;
+    background-color: #fff;
+    color: #285500;
+    font-size: 0.9rem;
+}
+
+.order > tbody > tr > td{
+    border-bottom: 1px solid #2855003a;
+    padding: 10px 0;
+}
+
+.order > thead > tr > th:nth-of-type(3) > img{
+    width: 25px; height: 25px;
+    vertical-align: middle;
+}
+
+
+/*
+============order-2==============
+*/
+.order-2{
+    width: 80%;
+    margin: 50px auto;
+    text-align: left;
+    
+}
+.order-2 > thead{
+    vertical-align: middle;
+    text-align: left;
+    width: 100%;
+}
+.order-2 > thead > tr{
+    vertical-align: middle;
+}
+.order-2 > tbody{
+    width: 100%;
+}
+.order-2 tr > th{
+    border-bottom: 1px solid #285500;
+    padding: 5px 0;
+}
+
+.order-2 tbody > tr > td{
+    padding: 10px 0;
+}
+.order-2 tbody > tr > td:nth-of-type(1){
+    width: 20%;
+}
+.order-2 tbody > tr > td:nth-of-type(2){
+    width: 80%;
+    text-align: left;
+}
+
+
+/*
+============order-3==============
+*/
+.order-3{
+    width: 80%;
+    margin: 50px auto;
+    text-align: left;
+    
+}
+.order-3 > thead{
+    vertical-align: middle;
+    text-align: left;
+    width: 100%;
+}
+.order-3 > thead > tr{
+    vertical-align: middle;
+}
+.order-3 > tbody{
+    width: 100%;
+}
+.order-3 tr > th{
+    border-bottom: 1px solid #285500;
+    padding: 5px 0;
+}
+
+.order-3 tbody > tr > td{
+    padding: 10px 0;
+}
+.order-3 tbody > tr > td:nth-of-type(1){
+    width: 20%;
+}
+.order-3 tbody > tr > td:nth-of-type(2){
+    width: 80%;
+    text-align: left;
+}
+
+.order-3 tbody:nth-child(2) > tr:nth-child(3) > td{
+    padding: 0;
+    color: #4c4c4c;
+}
+.order-3 tbody > tr > td > button{
+    border: 1px solid #c4c4c4;
+    background-color: #fff;
+    color: #285500;
+    border-radius: 5px;
+}
+
+
+.add{
+    width: 100%;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.add > span{
+    display: inline-block;
+    width: 10vw;
+    border: 1px solid #285500;
+    height: 50px;
+    text-align: center;
+    border-radius: 40px;
+    color: #285500;
+    background-color: #fff;
+    line-height: 50px;
+    margin: 0 5px;
+}
+.add > span:nth-child(2){
+    background-color: #285500;
+    color: #fff;
+}
