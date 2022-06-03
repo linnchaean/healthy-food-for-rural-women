@@ -17,12 +17,10 @@ h1,h2,h3,h4,p,figure{margin: 0;}
 a{text-decoration: none;} 
 table{border-collapse: collapse; border-spacing: 0;}
 
-body{}
-
 /*header*/
 header{
     /* position: fixed; */
-    width: 100%; height: 150px;
+    width: 100%; height: 130px;
     padding: 0 10%;
     display: flex;
     justify-content: space-between;
@@ -32,7 +30,6 @@ header{
 }
 /*burger*/
 header > .burger{width: 20%;}
-header > .bur
 header > .burger > a > span{
     display: block;
 }
@@ -81,7 +78,6 @@ header > nav > a:nth-child(4){
 }
 
 /*title*/
-.title{}
 .title > p{
     width: 8%;
     padding: 0;
@@ -102,7 +98,6 @@ footer{
     text-align: center;
     margin: 300px 0 0 30px ;
 }
-footer > nav{}
 footer > nav > a{
     display: inline-block;
     color: #000;
