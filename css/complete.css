@@ -200,3 +200,6 @@
     background-color: #285500;
     color: #fff;
 }
+main > .add > span > a{
+    color: #fff;
+}

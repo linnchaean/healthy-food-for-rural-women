@@ -76,3 +76,6 @@
     background-color: #fff;
     color: #285500;
 }
+main > .add > span > a{
+    color: #fff;
+}

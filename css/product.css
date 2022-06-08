@@ -82,3 +82,6 @@ main > .pd-list > a{
 .product > .sort > a:last-of-type::after{
     width: 0;
 }
+main > .add > span > a{
+    color: #fff;
+}

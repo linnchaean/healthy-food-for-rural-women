@@ -47,6 +47,9 @@ main > .add > span{
     line-height: 50px;
     margin: 0 5px;
 }
+main > .add > span > a{
+    color: #fff;
+}
 main > .add > span:nth-child(2){
     background-color: #285500;
     color: #fff;

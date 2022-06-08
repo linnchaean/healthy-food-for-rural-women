@@ -176,3 +176,7 @@ main > .add-2 > span:nth-child(2){
     background-color: #285500;
     color: #fff;
 }
+
+main > .add > span > a{
+    color: #fff;
+}

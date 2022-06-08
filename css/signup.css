@@ -153,6 +153,9 @@ main > .signup > .add > span{
     margin: 0 5px;
     background-color: #285500;
 }
+main > .add > span > a{
+    color: #fff;
+}
 
 
 
