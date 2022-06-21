@@ -1,34 +1,25 @@
 @import url(../css/common.css);
 
-
-.info-all{
-    display: flex;
-    width: 60%;
-    height: 430px;
-    margin: 0 auto;
-}
-
 /*info-img*/
-.info{
+main > .info{
     width: 60%;
-    margin: 0;
-    /* display: flex; */
+    margin: 0 auto;
+    display: flex;
     justify-content: center;
     margin-bottom: 100px;
     
 }
-.info > .img{
-    width: 100%;
-    margin: 0;
-}
-.info > .img > .info-img{
-    width: 100%;
+main > .info > .img{
     position: relative;
+    width: 100%;
 }
-.info > .img > .info-img > .swiper-slide{
+main > .info > .img > .info-img{
+    width: 100%;
+}
+main > .info > .img > .info-img .swiper-slide{
     width: 100%; 
 }
-.info > .img > .info-img > .swiper-slide > img{
+main > .info > .img > .info-img > .swiper-slide > img{
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.11);
     border-radius: 30px;
     width: 100%;
@@ -36,12 +27,12 @@
 
 /*info-btn*/
 /* main > .info > .img > .info-btn{}
-main > .info > .img > .info-btn > p:nth-child(1){
+main > .info > .img > .info-btn > .swiper-button-next{
     position: absolute;
     bottom: 50%; left: 0%;
     transform: translateY(70%);
 }
-main > .info > .img > .info-btn > p:nth-child(2){
+main > .info > .img > .info-btn > .swiper-button-prev{
     position: absolute;
     bottom: 50%; right: 0%;
     transform: translateY(70%);
@@ -50,30 +41,18 @@ main > .info > .img > .info-btn > p > img{
     width: 50px;
 } */
 
-.swiper-button-next{}
-.swiper-button-prev{}
-
-.swiper-button-next::after{
-    color: #285500;
-}
-.swiper-button-prev::after{
-    color: #285500;
-}
 
 
 /*info-txt*/
-.info2{
-    width: 40%;
+main > .info > .d-txt{
+    width: 20%;
+    margin-left: 100px;
 }
-.info2 > .d-txt{
-    width: 100%;
-    padding: 15px 50px;
-}
-.info2 > .d-txt > h3:nth-child(1){
+main > .info > .d-txt > h3:nth-child(1){
     font-size: 1.5rem;
 }
-.info2 > .d-txt > p{}
-.info2 > .d-txt > .number{
+main > .info > .d-txt > p{}
+main > .info > .d-txt > .number{
     display: flex;
     justify-content: flex-end;
     border-top: 1px solid #f4f4f4;
@@ -81,36 +60,36 @@ main > .info > .img > .info-btn > p > img{
     padding: 5px 0;
     margin: 5px 0;
 }
-.info2 > .d-txt > .number > label{
+main > .info > .d-txt > .number > label{
     margin-right: auto;
     text-align: left;
 }
-.info2 > .d-txt > .number > p{
+main > .info > .d-txt > .number > p{
     border: 1px solid #f4f4f4;
     height: 30px; width: 30px;
     padding: 6px;
 }
-.info2 > .d-txt > b{
+main > .info > .d-txt > b{
     color: #790606;
     margin-top: 20px;
     display: block;
 }
-.info2 > .d-txt > .number > input{
+main > .info > .d-txt > .number > input{
     border: 1px solid #f4f4f4;
     text-align: center;
     height: 30px;
 }
 
 
-.info2 > .d-txt > .price{
+main > .info > .d-txt > .price{
     display: flex;
     justify-content: space-between;
 }
-.info2 > .d-txt > .price > .sum > .num{
+main > .info > .d-txt > .price > .sum > .num{
     color: #790606;
 }
-.info2 > .d-txt > .add{}
-.info2 > .d-txt > .add > span{
+main > .info > .d-txt > .add{}
+main > .info > .d-txt > .add > span{
     display: block;
     border: 1px solid #4c4c4c;
     height: 60px;
@@ -121,12 +100,12 @@ main > .info > .img > .info-btn > p > img{
     line-height: 60px;
     margin-top: 90px;
 }
-.info2 > .d-txt > .add > span:nth-child(2){
+main > .info > .d-txt > .add > span:nth-child(2){
     background-color: #285500;
     color: #fff;
     margin-top: 15px;
 }
-.info2 > .d-txt > .add > span > b{
+main > .info > .d-txt > .add > span > b{
     font-size: 1.3rem;
 }
 
