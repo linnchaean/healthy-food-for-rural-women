@@ -53,6 +53,6 @@
 
 
 // burgermenu click 
-      $('.burger').on('click',function(){
+      $('.burger a span').on('click',function(){
          $('header_menu').addClass('active')
       })
