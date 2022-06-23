@@ -17,3 +17,42 @@
       
 
    });
+
+   $('body footer').click(function(){
+      event.preventDefault();
+      let pageUrl = $(this).attr('href');
+      
+
+      $('index').load(pageUrl);
+
+      $('body footer').eq(idx).removeClass('active');
+      $(this).addClass('active');
+
+      idx = $(this).index();
+      
+
+   });
+
+// header 
+      let scrollTop;
+         let offsetTop = $('header').offset().top;
+
+         $(window).on('scroll',function(){
+               scrollTop = $(window).scrollTop();
+
+               $('header').each(function(){
+                  if(offsetTop <= scrollTop){
+                     $('header').addClass('active');
+                     $('.visual p').addClass('active');
+                  }else{
+                     $('header').removeClass('active');
+                     $('.visual p').removeClass('active');
+                  }
+               })
+         });
+
+
+// burgermenu click 
+      $('.burger').click(function(){
+         $('header_menu').show();
+      });
