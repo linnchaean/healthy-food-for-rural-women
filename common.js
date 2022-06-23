@@ -35,13 +35,13 @@
 
 // header 
       let scrollTop;
-         let offsetTop = $('header').offset().top;
+      let offsetTop = $('header').offset().top;
 
          $(window).on('scroll',function(){
                scrollTop = $(window).scrollTop();
 
                $('header').each(function(){
-                  if(offsetTop <= scrollTop){
+                  if($(window).height()/2 > scrollTop){
                      $('header').addClass('active');
                      $('.visual p').addClass('active');
                   }else{
@@ -51,8 +51,8 @@
                })
          });
 
-
 // burgermenu click 
-      $('.burger a span').on('click',function(){
-         $('header_menu').addClass('active')
-      })
+      $('header .header_fix .burger').on('click',function(){
+         event.preventDefault()
+         $('header .header_menu').toggleClass('active')
+      });
