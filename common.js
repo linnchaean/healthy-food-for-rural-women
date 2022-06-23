@@ -1,37 +1,37 @@
  // common.js
-   $('index').load('index.html');
+   // $('index').load('index.html');
 
-   let idx;
+   // let idx;
 
-   $('body header').click(function(){
-      event.preventDefault();
-      let pageUrl = $(this).attr('href');
+   // $('body header').click(function(){
+   //    event.preventDefault();
+   //    let pageUrl = $(this).attr('href');
       
 
-      $('index').load(pageUrl);
+   //    $('index').load(pageUrl);
 
-      $('body header').eq(idx).removeClass('active');
-      $(this).addClass('active');
+   //    $('body header').eq(idx).removeClass('active');
+   //    $(this).addClass('active');
 
-      idx = $(this).index();
+   //    idx = $(this).index();
       
 
-   });
+   // });
 
-   $('body footer').click(function(){
-      event.preventDefault();
-      let pageUrl = $(this).attr('href');
+   // $('body footer').click(function(){
+   //    event.preventDefault();
+   //    let pageUrl = $(this).attr('href');
       
 
-      $('index').load(pageUrl);
+   //    $('index').load(pageUrl);
 
-      $('body footer').eq(idx).removeClass('active');
-      $(this).addClass('active');
+   //    $('body footer').eq(idx).removeClass('active');
+   //    $(this).addClass('active');
 
-      idx = $(this).index();
+   //    idx = $(this).index();
       
 
-   });
+   // });
 
 // header 
       let scrollTop;
@@ -53,6 +53,6 @@
 
 
 // burgermenu click 
-      $('.burger').click(function(){
-         $('header_menu').show();
-      });
+      $('.burger').on('click',function(){
+         $('header_menu').addClass('active')
+      })

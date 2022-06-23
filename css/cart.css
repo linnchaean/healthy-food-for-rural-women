@@ -167,15 +167,16 @@ main > .add-2 > span{
     height: 50px;
     text-align: center;
     border-radius: 40px;
-    color: #285500;
+    /* color: #285500; */
     background-color: #fff;
     line-height: 50px;
     margin: 0 5px;
 }
 main > .add-2 > span:nth-child(2){
     background-color: #285500;
-    color: #fff;
 }
+.add-2 > span > a > b{color: #285500;}
+.add-2 > span:nth-child(2) > a > b{color: #fff;}
 
 main > .add > span > a{
     color: #fff;
