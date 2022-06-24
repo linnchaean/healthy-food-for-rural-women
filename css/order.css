@@ -42,7 +42,8 @@
 }
 
 
-
+.order > tbody > tr:nth-child(1).active{display: none;}
+.order > tbody > tr:nth-child(2).active{display: none;}
 .order > tbody > tr > td:nth-child(1) > .item{
     display: flex;
     align-items: center;
@@ -85,6 +86,9 @@
 
 .order > tbody > tr:last-of-type{
     display: none;
+}
+.order > tbody > tr:last-of-type.active{
+    display: table-row;
 }
 .order > tbody > tr:last-of-type > td{
     border: none;
@@ -507,3 +511,11 @@
 main > .add > span > a{
     color: #fff;
 }
+
+
+
+/*========popup active=====*/
+.popup.active{display: block;}
+.popup-2.active{display: block;}
+.popup-3.active{display: block;}
+.shadow.active{display: block;}
