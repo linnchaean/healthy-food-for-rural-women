@@ -8,9 +8,10 @@
     <link rel="icon" type="image/png" href="./img/logo/favicon-16x16.png" sizes="16x16" />
     <link href="./css/index.css" rel="stylesheet">
     <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        rel="stylesheet"
+        href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script defer src="./common.js"></script>
 </head>
@@ -48,9 +49,9 @@
             <p><img src="img/logo/logo-main.jpg" alt="logo"></p>
             <h3>HEALTHY FOOD FOR RURAL WOMEN</h3>
             <div class="box"></div>
-            <div class="slide">
-                <ul>
-                    <li>
+            <div class="slide swiper mySwiper">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
                         <p><img src="img/list/salted4.png" alt="img"></p>
                         <div>
                             <h2>어리굴젓</h2>
@@ -58,7 +59,7 @@
                             <a href="">more ></a>
                         </div>
                     </li>
-                    <li>
+                    <li class="swiper-slide">
                         <p><img src="img/list/kimchi2.png" alt="img"></p>
                         <div>
                             <h2>동치미</h2>
@@ -66,7 +67,7 @@
                             <a href="">more ></a>
                         </div>
                     </li>
-                    <li>
+                    <li class="swiper-slide">
                         <p><img src="img/list/kimchi4.png" alt="img"></p>
                         <div>
                             <h2>배추물김치</h2>
@@ -74,7 +75,7 @@
                             <a href="">more ></a>
                         </div>
                     </li>
-                    <li>
+                    <li class="swiper-slide">
                         <p><img src="img/list/salted5.png" alt="img"></p>
                         <div>
                             <h2>국산 낙지 젓갈</h2>
@@ -82,7 +83,7 @@
                             <a href="">more ></a>
                         </div>
                     </li> 
-                    <li>
+                    <li class="swiper-slide">
                         <p><img src="img/list/side4.png" alt="img"></p>
                         <div>
                             <h2>주먹밥 재료</h2>
@@ -90,7 +91,7 @@
                             <a href="">more ></a>
                         </div>
                     </li>
-                    <li>
+                    <li class="swiper-slide">
                         <p><img src="img/list/side6.png" alt="img"></p>
                         <div>
                             <h2>양념게장</h2>
@@ -104,7 +105,7 @@
                     <p>02</p>
                     <p>03</p>
                 </div>
-                <div class="circle">
+                <div class="circle swiper-pagination">
                     <span>
                         <a href="">1</a>
                         <a href="">2</a>
@@ -197,7 +198,20 @@
         <p>ⓒ 2015 시골여자의바른먹거리. All rights reserved.</p>
     </footer>
 
-    
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                },
+            });
+        </script>
 
     
 </body>

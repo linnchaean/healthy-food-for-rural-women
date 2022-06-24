@@ -51,19 +51,12 @@ main > .visual > .box{
     left: 50%; bottom: 50%;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.575);
     z-index: -1;
-    animation: visual 1s ease 1;
+    animation: visual 1.5s ease 1;
 }
 @keyframes visual{
-    0%{
-        height: 0%;
-        /* transform: translateX(-100%); */
-        /* transform: translate(0%,0px) rotate(40deg) ; */
-    }
-    100%{
-        height: 100%;
-        /* transform: translateX(100%); */
-        /* transform: translate(-80%,200px) rotate(40deg) ; */
-    }
+    0%{height: 0%;}
+    50%{}
+    100%{}
 }
 
 /*.slide*/
@@ -75,16 +68,15 @@ main > .visual > .slide > ul{
     display: flex;
     justify-content: space-between;
     position: absolute;
-    bottom: 150px; left: 50%;
-    transform: translateX(-50%);
-    width:1200px;
+    /* bottom: 150px; left: 50%;
+    transform: translateX(-50%); */
+    width: 100%;
 }
-main > .visual > .slide > ul > li{
-    
-    width:200px;
+main > .visual > .slide > ul > .swiper-slide{
+    /* width:200px; */
     position: relative;
 }
-main > .visual > .slide > ul > li > p{}
+main > .visual > .slide > ul > li > p{width: 100%;}
 main > .visual > .slide > ul > li > p > img{width:100%;}
 main > .visual > .slide > ul > li > div{
     position: absolute;
@@ -103,7 +95,7 @@ main > .visual > .slide > ul > li > div > a{
 
 
 main > .visual > .slide > ul > li:nth-child(2) > p{
-    transform: translate(0,-250px) scale(3) ;
+    /* transform: translate(0,-250px) scale(3) ; */
 }
 main > .visual > .slide > ul > li:nth-child(2) > div{
     display: block;
@@ -119,14 +111,18 @@ main > .visual > .slide > ul > li:nth-child(2) > div > a{
     font-size: 1.2rem;
 }
 main > .visual > .slide > ul > li:nth-child(4){
-    display: none;
+    /* display: none; */
 }
 main > .visual > .slide > ul > li:nth-child(5){
-    display: none;
+    /* display: none; */
 }
 main > .visual > .slide > ul > li:nth-child(6){
-    display: none;
+    /* display: none; */
 }
+/* .swiper-wrapper p{margin: 0;} */
+
+.swiper-slide-prev{width: 50%;}
+.swiper-slide-next{width: 50%;}
 
 
 /*.number*/
@@ -151,6 +147,7 @@ main > .visual > .slide > .number > p:nth-child(2){
 main > .visual > .slide > .number > p:nth-child(3){
     color: #FF8A48;
 }
+
 
 /*circle*/
 main > .visual > .slide > .circle{
@@ -179,6 +176,7 @@ main > .visual > .slide > .circle > span > a::after{
 main > .visual > .slide > .circle > span > a:nth-child(1){
     border: 1px solid #285500;
 }
+
 
 .product > .name{
     width: 100%; 
